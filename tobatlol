@@ -1,0 +1,24 @@
+tobatlol
+#!bin/bash
+clear
+
+echo "========================================== "
+echo "Autor:MrB79"
+echo "peringatan:Gunakan Sebaik baik nya"
+echo "========================================== "
+figlet call | lolcat
+echo '
+[1]. Call
+[2]. Exit
+'
+echo
+read -p "Masukan Pilihan Anda  : " pil
+if [[ $pil == 1 ]]; then
+read -p "Masukan Nomor : " nomor
+link="https://id.jagreward.com/member/verify-mobile/$nomor"
+curl -s $link
+else
+echo 'Terima Kasih'
+exit
+fi
+echo
